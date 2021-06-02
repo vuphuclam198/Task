@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>AHT listing</title>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <uiComponent name="task_index_listing" />
+            <!-- <block name="test.m" class="Magento\Framework\View\Element\Template" template="AHT_Task::list.phtml" /> -->
+        </referenceContainer>
+    </body>
+</page>

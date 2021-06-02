@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+   <menu>
+       <add id="AHT_Task::menu_vuna"
+           title="Menu Vuna" module="AHT_Task"
+           sortOrder="10"
+           resource="Magento_Backend::content"
+           />
+        <add id="AHT_Task::menu_item"
+           title="vuna post" module="AHT_Task"
+           sortOrder="11" parent="AHT_Task::menu_vuna"
+           action="task/index/index"
+           resource="AHT_Task::post"
+           />
+   </menu>
+</config>

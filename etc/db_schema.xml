@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="commission" resource="default" engine="innodb" comment="commission Table">
+        <column xsi:type="int" name="entity_id" padding="10" unsigned="true" nullable="false" identity="false" comment="entity_id"/>
+        <column xsi:type="int" name="order_id" padding="10" unsigned="true" nullable="false" identity="false" comment="order_id"/>
+        <column xsi:type="int" name="order_item_id" padding="10" unsigned="true" nullable="false" identity="false" comment="order_item_id"/>
+        <column xsi:type="varchar" name="order_item_sku" length="250" nullable="false" comment="order_item_sku"/>
+        <column xsi:type="int" name="order_item_price" padding="11" unsigned="true" nullable="false" identity="false" comment="order_item_price"/>
+        <column xsi:type="int" name="commision_percent" padding="10" unsigned="true" nullable="false" identity="false" comment="commision_percent"/>
+        <column xsi:type="int" name="commission_value" padding="10" unsigned="true" nullable="false" identity="false" comment="commission_value"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id"/>
+        </constraint>
+    </table>
+</schema>
